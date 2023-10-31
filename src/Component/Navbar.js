@@ -87,6 +87,22 @@ const Navbar = () => {
                   {/* Add valid href values for submenu items */}
                 </ul>
               </li>
+              <li className="has-submenu">
+                <Link to="/project">
+                  Projects <i className="fas fa-chevron-down"></i>
+                </Link>
+                <ul className="submenu">
+                  {/* Add valid href values for submenu items */}
+                </ul>
+              </li>
+              <li className="has-submenu">
+                <Link to="/category">
+                  Categories<i className="fas fa-chevron-down"></i>
+                </Link>
+                <ul className="submenu">
+                  {/* Add valid href values for submenu items */}
+                </ul>
+              </li>
               <li></li>
             </ul>
           </div>

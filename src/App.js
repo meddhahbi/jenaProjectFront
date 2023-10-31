@@ -1,8 +1,9 @@
-import "./App.css";
-import { Route, Routes } from "react-router-dom";
-import MainInterface from "./Component/MainInterface";
-import Home from "./Component/pages/Home";
-import CategoriesList from "./Component/pages/CategoriesList";
+import './App.css';
+import { Route, Routes } from 'react-router-dom';
+import MainInterface from './Component/MainInterface';
+import Home from './Component/pages/Home';
+import CategoriesList from './Component/pages/CategoriesList';
+import ProjectsList from './Component/pages/ProjectsList';
 import { Alert } from "./Component/pages/alert/Alert";
 import { ReplyAlert } from "./Component/pages/alert/ReplyAlert";
 import OffersList from "./Component/pages/OffersList";
@@ -14,14 +15,16 @@ function App() {
       <Routes>
         <Route path="/" element={<MainInterface />}>
           <Route index element={<Home />} />
-          <Route path="/category" element={<CategoriesList />} />
+          <Route path='/category' element={<CategoriesList />}/>
+          <Route path='/project' element={<ProjectsList />}/>
+
           <Route path="/offer" element={<OffersList />} />
           <Route path="/skill" element={<SkillsList />} />
           <Route path="/alert" element={<Alert />} />
           <Route path="/reply" element={<ReplyAlert />} />
-        </Route>
-      </Routes>
-    </div>
+      </Route>
+    </Routes>
+   </div>
   );
 }
 
