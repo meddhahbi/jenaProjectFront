@@ -41,6 +41,7 @@ const CategoriesList = () => {
                         <tr>
                           <th>Name</th>
                           <th>Description</th>
+                          
                         </tr>
                       </thead>
                       <tbody>

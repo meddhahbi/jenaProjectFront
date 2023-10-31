@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -77,6 +78,38 @@ const Navbar = () => {
                 <a href="#">
                   Blog <i className="fas fa-chevron-down"></i>
                 </a>
+                <ul className="submenu">
+                  {/* Add valid href values for submenu items */}
+                </ul>
+              </li>
+              <li className="has-submenu">
+                <Link to="/alert">
+                  Alert <i className="fas fa-chevron-down"></i>
+                </Link>
+                <ul className="submenu">
+                  {/* Add valid href values for submenu items */}
+                </ul>
+              </li>{" "}
+              <li className="has-submenu">
+                <Link to="/reply">
+                  Reply <i className="fas fa-chevron-down"></i>
+                </Link>
+                <ul className="submenu">
+                  {/* Add valid href values for submenu items */}
+                </ul>
+              </li>
+              <li className="has-submenu">
+                <Link to="/project">
+                  Projects <i className="fas fa-chevron-down"></i>
+                </Link>
+                <ul className="submenu">
+                  {/* Add valid href values for submenu items */}
+                </ul>
+              </li>
+              <li className="has-submenu">
+                <Link to="/category">
+                  Categories<i className="fas fa-chevron-down"></i>
+                </Link>
                 <ul className="submenu">
                   {/* Add valid href values for submenu items */}
                 </ul>

@@ -1,0 +1,55 @@
+.alertTable {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.alerttable {
+  border: 2px solid rgb(209, 108, 14);
+  width: 800px;
+  height: 200px;
+}
+
+.alertth {
+  border-bottom: 1px solid rgb(228, 125, 8);
+  text-align: center;
+}
+
+.alerttd {
+  text-align: center;
+}
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px transparent;
+  border-right: none;
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9dbfaf;
+}
+
+.searchTerm:focus {
+}
+
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border: 1px solid;
+  background: #cc8500;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/*Resize the wrap to see the search bar change!*/
