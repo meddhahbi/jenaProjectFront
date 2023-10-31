@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./alert/alert.css";
 const Home = () => {
   return (
     <div>
