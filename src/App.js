@@ -3,10 +3,10 @@ import { Route, Routes } from 'react-router-dom';
 import MainInterface from './Component/MainInterface';
 import Home from './Component/pages/Home';
 import CategoriesList from './Component/pages/CategoriesList';
-<<<<<<< HEAD
+
 import BlogList from './Component/pages/blogLitst';
 import CommentList from './Component/pages/commentList';
-=======
+
 
 import GigList from './Component/pages/GigList';
 import GigRating from './Component/pages/GigRating';
@@ -18,7 +18,7 @@ import OffersList from "./Component/pages/OffersList";
 import SkillsList from "./Component/pages/SkillsList";
 
 
->>>>>>> 133f0e4714de6db6f8c60f63c1b96a99938ae35b
+
 function App() {
   return (
     <div>
