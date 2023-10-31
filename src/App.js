@@ -16,6 +16,16 @@ import OffersList from "./Component/pages/OffersList";
 import SkillsList from "./Component/pages/SkillsList";
 
 
+import GigList from './Component/pages/GigList';
+import GigRating from './Component/pages/GigRating';
+
+import ProjectsList from './Component/pages/ProjectsList';
+import { Alert } from "./Component/pages/alert/Alert";
+import { ReplyAlert } from "./Component/pages/alert/ReplyAlert";
+import OffersList from "./Component/pages/OffersList";
+import SkillsList from "./Component/pages/SkillsList";
+
+
 function App() {
   return (
     <div>
@@ -25,6 +35,11 @@ function App() {
           <Route path='/category' element={<CategoriesList />}/>
           <Route path='/condidature' element={<ConadidatureList />}/>
           <Route path='/reponse' element={<ReponseList />}/>
+
+          <Route path='/gig' element={<GigList />}/>
+          <Route path='/reviews' element={<GigRating />}/>
+
+          <Route path='/project' element={<ProjectsList />}/>
 
           <Route path='/gig' element={<GigList />}/>
           <Route path='/reviews' element={<GigRating />}/>
