@@ -55,6 +55,17 @@ const Navbar = () => {
                 </ul>
               </li>
               <li className="has-submenu">
+  <a href="/Condidature">
+    Condidature <i className="fas fa-chevron-down"></i>
+  </a>
+  <ul className="submenu">
+    <li>
+      <a href="/Reponse">Reponse</a>
+    </li>
+  </ul>
+</li>
+
+              <li className="has-submenu">
                 <a href="#">
                   Pages <i className="fas fa-chevron-down"></i>
                 </a>
