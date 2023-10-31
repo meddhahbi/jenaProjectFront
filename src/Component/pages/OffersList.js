@@ -38,6 +38,8 @@ function OffresList(props) {
                                                 <tr>
                                                     <th>Title</th>
                                                     <th>Description</th>
+                                                    <th>User</th>
+                                                    <th>Candidat firstname</th>
                                                 </tr>
                                                 </thead>
                                                 <tbody>
@@ -48,6 +50,16 @@ function OffresList(props) {
                                                         <td>
                                                             <p className="mb-0">
                                                                 {offre.offreDescription}
+                                                            </p>
+                                                        </td>
+                                                        <td>
+                                                            <p className="mb-0">
+                                                                {offre.username}
+                                                            </p>
+                                                        </td>
+                                                        <td>
+                                                            <p className="mb-0">
+                                                                {offre.firstName}
                                                             </p>
                                                         </td>
                                                     </tr>

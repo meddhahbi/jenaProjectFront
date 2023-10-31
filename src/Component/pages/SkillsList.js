@@ -37,7 +37,7 @@ function SkillsList(props) {
                                                 <thead className="thead-pink">
                                                 <tr>
                                                     <th>Title</th>
-                                                    <th>Description</th>
+                                                    <th>User</th>
                                                 </tr>
                                                 </thead>
                                                 <tbody>
@@ -47,7 +47,7 @@ function SkillsList(props) {
                                                         <td>{skill.skillName}</td>
                                                         <td>
                                                             <p className="mb-0">
-                                                                {skill.skillDescription}
+                                                                {skill.username}
                                                             </p>
                                                         </td>
                                                     </tr>
