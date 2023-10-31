@@ -2,6 +2,7 @@ import './App.css';
 import { Route, Routes } from 'react-router-dom';
 import MainInterface from './Component/MainInterface';
 import Home from './Component/pages/Home';
+import CategoriesList from './Component/pages/CategoriesList';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Route path='/' element={<MainInterface />}>
 
           <Route index element={<Home />} />
+          <Route path='/category' element={<CategoriesList />}/>
 
 
       </Route>
