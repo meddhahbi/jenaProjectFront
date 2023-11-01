@@ -46,58 +46,68 @@ export const Alert = () => {
   }, [searchedValue, alert]);
 
   return (
-    <>
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-        }}
-      >
-        <div class="wrap">
-          <div class="search">
-            <input
-              type="text"
-              class="searchTerm"
-              placeholder="What are you looking for?"
-              value={searchedValue}
-              onChange={(e) => {
-                setSearchedValue(e.target.value);
-              }}
-            />
-            <button type="submit" class="searchButton">
-              <i class="fa fa-search"></i>
-            </button>
+    <div className="container">
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <div className="my-projects-view">
+        <div className="row">
+          <div className="col-lg-12">
+            <div className="card">
+              <div className="card-header">
+                <div className="row justify-content-between align-items-center">
+                  <div className="col">
+                    <h5 className="card-title">Alerts</h5>
+                  </div>
+                  <div className="col">
+                    <div className="form-group mt-4">
+                      <input
+                        type="text"
+                        className="form-control"
+                        placeholder="Search"
+                        value={searchedValue}
+                        onChange={(e) => setSearchedValue(e.target.value)}
+                      />
+                    </div>
+                  </div>
+                  <div className="col">
+                    <button className="btn btn-primary">Search</button>
+                  </div>
+                </div>
+              </div>
+              <div className="card-body">
+                <div className="table-responsive table-box">
+                  <table className="table table-center table-hover datatable">
+                    <thead className="thead-pink">
+                      <tr>
+                        <th>UserName</th>
+                        <th>Alert Title </th>
+                        <th>Reply Description</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {searchedAlert.map((condidature, index) => (
+                        <tr key={index}>
+                          <td>{condidature.username}</td>
+                          <td>
+                            {condidature.alertTitle == ""
+                              ? "BUG Detected"
+                              : condidature.alertTitle}
+                          </td>
+                          <td>{condidature.alertDescription}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <br />
-
-      <div className="alertTable">
-        <table className="alerttable">
-          <tr>
-            <th className="alertth">Alert Title</th>
-            <th className="alertth">Alert Description</th>
-          </tr>
-          {searchedAlert?.map((val, key) => {
-            return (
-              <tr key={key}>
-                {" "}
-                <td className="alerttd">{val.alertTitle}</td>
-                <td className="alerttd">{val.alertDescription}</td>
-              </tr>
-            );
-          })}
-        </table>
-      </div>
-
-      <br />
-      <br />
-      <br />
-    </>
+    </div>
   );
 };
